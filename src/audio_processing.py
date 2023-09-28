@@ -6,7 +6,7 @@ from scipy.signal import stft
 import matplotlib.pyplot as plt
 from librosa.feature import melspectrogram
 from functools import lru_cache
-from callfinder import CallFinder
+from .callfinder import CallFinder
 import torch
 from torchvision.transforms import Resize
 

@@ -10,14 +10,14 @@ np.random.seed(42); torch.manual_seed(42)
 
 import seaborn as sns
 import matplotlib.pyplot as plt
-plt.ion(); plt.style.use('seaborn-pastel')
+plt.ion()
 
 from librosa.feature import mfcc
-from utils import preprocess_call_labels
-from callfinder import CallFinder as CallFinderBasic
-from audio.audio_processing import get_spectrum, load_audio_file
+from .utils import preprocess_call_labels
+from .callfinder import CallFinder as CallFinderBasic
+from .audio_processing import get_spectrum, load_audio_file
 from sklearn.metrics import confusion_matrix
-from callfinder import CallFinder as CallFinderBasic
+from .callfinder import CallFinder as CallFinderBasic
 
 from loguru import logger; l = logger.debug
 import wandb
